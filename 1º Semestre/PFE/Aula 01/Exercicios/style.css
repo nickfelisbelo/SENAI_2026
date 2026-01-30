@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.atividades{
+    margin: 10px;
+    border: solid black 1px;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.227);
+    box-shadow: black 1px 1px 8px;
+}
+
+.atividade{
+    margin: 15px;
+    padding: 16px;
+    border: solid black 1px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.atividade:hover{
+    background-color: rgba(128, 128, 128, 0.634);
+    box-shadow: 0.1px 0.1px 5px black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
