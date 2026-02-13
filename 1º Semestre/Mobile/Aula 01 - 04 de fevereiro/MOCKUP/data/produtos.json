@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nome": "Camiseta Regata",
+        "descricao": "Camiseta Regata Maculina",
+        "preco": 38.9,
+        "quantidade": 10,
+        "img": ""
+    },
+    {
+        "id": 2,
+        "nome": "Camiseta Oversize",
+        "descricao": "Camiseta Oversize Masculina",
+        "preco": 49.99,
+        "quantidade": 20,
+        "img": ""
+    },
+    {
+        "id": 3,
+        "nome": "Camiseta Polo",
+        "descricao": "Camiseta Polo Masculina",
+        "preco": 58.9,
+        "quantidade": 15,
+        "img": ""
+    },
+    {
+        "id": 4,
+        "nome": "Camiseta Regata",
+        "descricao": "Camiseta Regata Feminina",
+        "preco": 58.9,
+        "quantidade": 11,
+        "img": "https://static.ferju.com.br/public/ferju/imagens/produtos/regata-feminina-adulto-lisa-com-lycra-1000004492-malwee-preto-11877.jpg"
+    },
+    {
+        "id": 5,
+        "nome": "Camiseta Oversize",
+        "descricao": "Camiseta Oversize Feminina",
+        "preco": 68.9,
+        "quantidade": 12,
+        "img": "https://texasfarmstore.cdn.magazord.com.br/img/2024/12/produto/19419/79136.jpg"
+    },
+    {
+        "id": 6,
+        "nome": "Calça Cargo",
+        "descricao": "Calça Cargo Masculina",
+        "preco": 78.9,
+        "quantidade": 9,
+        "img": "https://images.tcdn.com.br/img/img_prod/873120/calca_jogger_cargo_com_punho_masculina_bege_1159_2_eceedf190041aa22efc8c46fab3d8d70.jpg"
+    },
+    {
+        "id": 7,
+        "nome": "Calça Cargo",
+        "descricao": "Calça Cargo Feminina",
+        "preco": 98.9,
+        "quantidade": 7,
+        "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meewefs1nw8z41"
+    },
+    {
+        "id": 8,
+        "nome": "Motelom",
+        "descricao": "Moletom Unisex",
+        "preco": 109.9,
+        "quantidade": 100,
+        "img": "https://img.irroba.com.br/filters:fill(fff):quality(80)/lucaoeue/catalog/branco.jpg"
+    },
+    {
+        "id": 9,
+        "nome": "Camiseta Canelada",
+        "descricao": "Camiseta Canelada Masculina",
+        "preco": 78.9,
+        "quantidade": 25,
+        "img": "https://basico.com/cdn/shop/files/1021011025C1002-L1_6a82bd7c-96fc-4e89-890e-1d15cdef5634_1100x.jpg?v=1750128542"
+    },
+    {
+        "id": 10,
+        "nome": "Camiseta de Compressão",
+        "descricao": "Camiseta de Compressão Masculina",
+        "preco": 88.9,
+        "quantidade": 5,
+        "img": "https://m.media-amazon.com/images/I/51LxNgc12UL._AC_SX466_.jpg"
+    }
+]
