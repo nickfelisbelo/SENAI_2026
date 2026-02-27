@@ -3,7 +3,6 @@ Neste repositótio há o conteúdo do curso de Desenvolvimento de Sistemas no SE
 - ## *Informações do Repositório*
     - Criado em 31/01/2026.
     - Feito com a ajuda dos professores do SENAI.
-<<<<<<< HEAD
     - Este repositório foi criado por **nickfelisbelo**.
 
 ---
