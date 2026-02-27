@@ -28,15 +28,19 @@ Neste repositótio há o conteúdo do curso de Desenvolvimento de Sistemas no SE
             ```
 
         - ### ***[Entregas](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Back%20End/Entregas)***
-            + **[Atividade Locadora]()**
+            + **[Atividade Locadora](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Back%20End/Entregas/Projeto%20Locadora%20-%2025%20de%20fevereiro%20de%202026)**
 ---
 - ## **FrontEnd**
-    - ### ***[Aulas]()***
-        - **[Aula 01]()**
-        - **[Aula 02]()**
+    Os projetos da matéria ***FrontEnd***
+    - ### ***[Aulas](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Front%20End)***
+        - **[Aula 01](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Front%20End/Aula%2001)**
+        - **[Aula 02](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Front%20End/Aula02)**
 
 ---
 - ## **Mobile**
-
+    - ### ***[Aulas](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Mobile)***
+        - **[Aula 01](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Mobile/Aula%2001%20-%2004%20de%20fevereiro)**
+        - **[Aula 02 - Dart (Aula 01)](https://github.com/nickfelisbelo/SENAI_2026/tree/main/1%C2%BA%20Semestre/Mobile/Dart%20-%20Aula%2001)**
 ---
 - ## **Projetos**
+    - ### **[Projeto SEathleticSI]()**
