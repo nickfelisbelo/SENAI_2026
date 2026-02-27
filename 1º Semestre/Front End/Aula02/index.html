@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,23 @@
             <tbody id="dados"></tbody>
         </table>
     </main>
+    <!-- Modal -->
+     <div class="modal" id="modalCliente">
+        <div class="modal-content">
+            <h2>Novo Cliente</h2>
+            <form id="cadastrarCliente">
+                <input type="text" name="cpf" placeholder="CPF" required>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                <input type="date" name="nascimento" required>
+
+                <div class="modal-buttons">
+                    <button type="submit">Salvar</button>
+                    <button type="reset" onclick="fecharModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
