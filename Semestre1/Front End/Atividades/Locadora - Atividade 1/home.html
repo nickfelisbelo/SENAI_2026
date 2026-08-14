@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora SeuFilme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Locadora SeuFilme</h1>
+        <button onclick="abrirModal()">+ Novo Filme</button>
+    </header>
+    <input type="text" id="buscarGenero" placeholder="Buscar por gênero">
+    <button onclick="buscarGenero()">Buscar</button>
+    <button onclick="renderizarTabela()">Mostrar Todos</button>
+    <main>
+        <table>
+            <thead>
+            <tr>
+                <th>Capa</th>
+                <th>Nome</th>
+                <th>Gênero</th>
+                <th>Ano</th>
+                <th>Classificação</th>
+                <th>Produtora</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody id="dados"></tbody>
+        </table>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Novo Filme</h2>
+            <input type="text" id="capa" placeholder="Link da Imagem da Capa">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="genero" placeholder="Gênero">
+            <input type="date" id="ano">
+            <label>Classificação:</label>
+            <select id="opcoes">
+            <option value="">Selecione</option>
+                <option value="Livre">Livre</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18+</option>
+            </select>
+            <input type="text" id="produtora" placeholder="Produtora">
+            <div class="modal-buttons">
+                <button onclick="salvarFilme()">Salvar</button>
+                <button onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

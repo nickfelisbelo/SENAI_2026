@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>GitParty</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="evento.html">Detalhes do evento</a></li>
+            </ul>
+            <button onclick="evento.classList.remove('oculto')">
+                Adicionar Evento
+            </button>
+        </div>
+    </header>
+    <main></main>
+    <div id="evento" class="modal oculto">
+        <div class="janela">
+            <h2>Adicionar Evento</h2>
+            <form id="formCad">
+                <label>Titulo do Evento</label><br>
+                <input type="text" id="nome" placeholder="Digite o nome do seu evento" required><br>
+                <label>Descricao</label><br>
+                <input type="text" id="descricao" placeholder="Descrição do Evento">
+                <p>Data do Evento</p>
+                <input type="text" id="data" placeholder="DD/MM/AAAA" required>
+                <label>Local</label>
+                <input type="text" id="local" placeholder="Digite o local" required><br>
+                <label>Capacidade Máxima</label><br>
+                <input type="text" placeholder="Digite a quantidade máxima"><br>
+                <label>Status</label><br>
+                <select name="carros" id="carros">
+                    <option value="confirmada">Confirmada</option>
+                    <option value="lista_espera">Lista de Espera</option>
+                    <option value="cancelada">Cancelada</option>
+                </select><br>
+                <label>Imagem</label>
+                <input type="file" id="imagem" required class="oculto">
+                <br>
+                <div class="disfarce"><img id="imagem" src="https://cdn-icons-png.flaticon.com/512/1160/1160358.png">Escolher arquivo</div><br>
+                <button type="reset" onclick="evento.classList.add('oculto')">
+                    Cancelar
+                </button>
+                <button type="submit">
+                    Salvar
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

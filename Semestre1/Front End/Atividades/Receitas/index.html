@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas MasterChef</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/d/d1/MasterchefSpain-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Receitas pro Masterchef - Brazil</h1>
+        <button onclick="abrirModal()">+ Nova Receita</button>
+    </header>
+    <main id="container"></main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Nova Receita</h2>
+            <p>Nome da Receita</p>
+            <input type="text" id="nome" placeholder="Nome da Receita">
+            <p>Tipo</p>
+            <input type="text" class="tipo" placeholder="SALGADA ou DOCE">
+            <p>Ingredientes</p>
+            <input type="text" id="ingredientes" placeholder="Ingredientes da Receita">
+            <p>Modo de Preparo</p>
+            <input type="text" id="modoPreparo" placeholder="Modo de Preparo">
+            <p>Imagem</p>
+            <input type="text" class="img" placeholder="URL da imagem">
+            <p>Custo aproximado</p>
+            <input type="text" id="custo" placeholder="Custo aproximado">
+            <div class="modal-buttons">
+                <button onclick="salvarFilme()">Salvar</button>
+                <button onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

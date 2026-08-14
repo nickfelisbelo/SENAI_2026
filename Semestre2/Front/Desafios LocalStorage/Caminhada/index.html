@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Caminhadas</h1>
+        <button onclick="abrirModal()" class="btnAdicionar">Adicionar</button>
+    </header>
+    <main>
+        <h2>Caminhadas</h2>
+        <div class="modal-cadastrar">
+            <form>
+                <p class="cadastrar">Cadastrar</p>
+                <label for="data">Data</label> <br>
+                <input type="date" id="data"> <br>
+                <label for="partida">Partida</label> <br>
+                <input type="text" id="partida"> <br>
+                <label for="chegada">Chegada</label> <br>
+                <input type="text" id="text"> <br>
+                <label for="distancia">Distância(Km's)</label> <br>
+                <input type="number" id="distancia"> <br>
+                <label for="peso">Peso Atual</label> <br>
+                <input type="number" id="peso"><br>
+                <p>
+                    <button onclick="adicionarCaminhada()" class="btnCadastrar">Cadastrar</button>
+                    <button onclick="fecharModal()" class="btnFechar" >Cancelar</button>
+                </p>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
