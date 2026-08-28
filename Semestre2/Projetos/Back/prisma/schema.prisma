@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -17,8 +11,9 @@ model Psicologo {
   nome      String
   email     String     @unique
   senha     String
-  Consultas Consulta[]
-  Pacientes Paciente[]
+
+  consultas Consulta[]
+  pacientes Paciente[]
 }
 
 model Paciente {
@@ -27,34 +22,37 @@ model Paciente {
   email       String     @unique
   senha       String
   psicologoId Int
-  pontos      Int
-  psicologo   Psicologo  @relation(fields: [psicologoId], references: [id])
-  Consultas   Consulta[]
-  Tarefas     Tarefas[]
+  pontos      Int        @default(0)
+
+  psicologo Psicologo @relation(fields: [psicologoId], references: [id])
+  consultas Consulta[]
+  tarefas   Tarefa[]
 }
 
 model Consulta {
-  id          Int       @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   data        DateTime
   psicologoId Int
   pacienteId  Int
-  psicologo   Psicologo @relation(fields: [psicologoId], references: [id])
-  paciente    Paciente  @relation(fields: [pacienteId], references: [id])
+
+  psicologo Psicologo @relation(fields: [psicologoId], references: [id])
+  paciente  Paciente  @relation(fields: [pacienteId], references: [id])
 }
 
-model Recompensas {
+model Recompensa {
   id        Int    @id @default(autoincrement())
   nome      String
   descricao String
   preco     Int
 }
 
-model Tarefas {
-  id         Int      @id @default(autoincrement())
+model Tarefa {
+  id         Int    @id @default(autoincrement())
   nome       String
   descricao  String
   status     String
   pontos     Int
   pacienteId Int
-  paciente   Paciente @relation(fields: [pacienteId], references: [id])
+
+  paciente Paciente @relation(fields: [pacienteId], references: [id])
 }

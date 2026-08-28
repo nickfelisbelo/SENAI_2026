@@ -1,62 +1,22 @@
-const prisma = require("../data/prisma");
-
-const cadastrar = async (req, res) => {
-    const data = req.body;
-
-    const item = await prisma.paciente.create({
-        data
-    });
-
-    res.json(item).status(201).end();
-};
-
-const listar = async (req, res) => {
-    const lista = await prisma.paciente.findMany();
-
-    res.json(lista).status(200).end();
-};
-
-const buscar = async (req, res) => {
-    const { id } = req.params;
-    
-    const item = await prisma.paciente.findUnique({
-        where: { id : Number(id) },
-        include: {
-            consultas: true,
-            psicologos: true,
-            tarefas: true
+const service = require("../services/paciente.services");
+const executar = (fn, status=200) => async (req,res) => {
+    try {
+        return res.status(status).json(await fn(req));
+    }  catch (e) {
+        return res.status(400).json( {
+            mensagem:e.message
         }
-    });
-
-    res.json(item).status(200).end();
-};
-
-const atualizar = async (req, res) => {
-    const { id } = req.params;
-    const dados = req.body;
-    
-    const item = await prisma.paciente.update({
-        where: { id : Number(id) },
-        data: dados
-    });
-
-    res.json(item).status(200).end();
-};
-
-const excluir = async (req, res) => {
-    const { id } = req.params;
-    
-    const item = await prisma.paciente.delete({
-        where: { id : Number(id) }
-    });
-
-    res.json(item).status(200).end();
-};
-
-module.exports = {
-    cadastrar,
-    listar,
-    buscar,
-    atualizar,
-    excluir
+        );
+    }
 }
+;
+const cadastrar = executar(req => service.cadastrar(req.body, req.usuario), 201);
+const listar = executar(req => service.listar(req.usuario));
+const buscar = executar(req => service.buscar(req.params.id, req.usuario));
+const atualizar = executar(req => service.atualizar(req.params.id, req.body, req.usuario));
+const excluir = executar(req => service.excluir(req.params.id, req.usuario));
+const meuPsicologo = async (req,res)=>res.status(200).json(await service.meuPsicologo(req.usuario));
+module.exports = {
+    cadastrar, listar, buscar, atualizar, excluir, meuPsicologo
+}
+;
